@@ -9,22 +9,18 @@ function subtract(a, b) {
 function multiply(a, b) {
   return a * b;
 }
+
 function divide(a, b) {
   return a / b;
 }
-
-console.log(add(5, 5));
-console.log(subtract(5, 5));
-console.log(multiply(5, 5));
-console.log(divide(5, 5));
 
 let number;
 let operator;
 let anotherNumber;
 
 function operate(a, o, b) {
-  if (o === "+") return add(a, c);
-  if (o === "-") return subtract(a, c);
-  if (o === "*") return multiply(a, c);
-  if (o === "/") return divide(a, c);
+  if (o === "+") return add(a, b);
+  if (o === "-") return subtract(a, b);
+  if (o === "*") return multiply(a, b);
+  if (o === "/") return divide(a, b);
 }
