@@ -263,7 +263,9 @@ function calculator(buttonTap) {
 
   if (operator === "/" && anotherNumber === "0") {
     mainDisplay.textContent =
-      "Learn some math fool 🤡 (SORRY, TOP made me do this.), Press backspace or C to go back.";
+      "Learn some math fool 🤡 (SORRY, TOP made me do this.), Now refresh the page to continue.";
+    container.textContent =
+      "Learn some math fool 🤡 (SORRY, TOP made me do this.), Now refresh the page to continue.";
   } else if (
     Number.isFinite(operate(+number, operator, +anotherNumber)) &&
     number !== "" &&
@@ -276,9 +278,8 @@ function calculator(buttonTap) {
   }
 
   if (mainDisplay.textContent === "") {
-    miniDisplay.textContent = "What is infinity x infinity?";
-    mainDisplay.textContent =
-      "Enter the number! Or Divide something with 0 to have answer.";
+    miniDisplay.textContent = "😄";
+    mainDisplay.textContent = "Enter the number!";
   }
 }
 
@@ -298,6 +299,7 @@ let tempDisplay;
 
 const calculatorBody = document.querySelector(".calculator-body");
 const allBtn = document.querySelectorAll("button");
+const container = document.querySelector(".container");
 const mainDisplay = document.querySelector(".main-display");
 const miniDisplay = document.querySelector(".mini-display");
 
